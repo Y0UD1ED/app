@@ -48,7 +48,7 @@ const boxStyle = {
       const formData = new FormData();
       formData.append('file', file0);
       
-      store.updateAvatar(formData);
+      await store.updateAvatar(formData);
         setPreview(URL.createObjectURL(blob));
         setModalOpen(false);
       }
